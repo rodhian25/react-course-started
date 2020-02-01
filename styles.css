@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --main-red-color: red;
+}
+.main-red-color {
+  color: var(--main-red-color);
+}
+
 html {
   font-size: 10px;
 }
@@ -32,7 +40,27 @@ html {
 .frame {
   border: 1px solid #2d2d2d;
   height: 100%;
-}
 
-font-family: "Bungee", cursive;
-font-family: "Homemade Apple", cursive;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: "Homemade Apple", cursive;
+  text-transform: lowercase;
+}
+.header-btn {
+  font-size: 1.8rem;
+  font-family: "Bungee", cursive;
+  padding: 24px;
+
+  border: unset;
+  background: unset;
+  outline: unset;
+}
